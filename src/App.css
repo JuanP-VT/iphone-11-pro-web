@@ -13,31 +13,29 @@
   display: flex;
   align-items: center;
   font-weight: 600;
-  color: whitesmoke;
+  color: #f5f5f7;
   cursor: pointer;
 }
 #nav ul li:hover {
   color: rgb(95, 95, 94);
 }
 #nav svg {
-  fill: whitesmoke;
+  fill: #f5f5f7;
 }
 #nav svg:hover {
   fill: rgb(95, 95, 94);
+}
+
+body {
+  height: 600vh;
 }
 
 #main {
   position: relative;
 }
 
-#Hero {
-  background-color: #111;
-  color: whitesmoke;
-  font-weight: 600;
-  height: 600vh;
-}
-
 #MainNav {
+  z-index: 10;
   position: sticky;
   top: 0px;
   background-color: #111;
@@ -46,7 +44,7 @@
   width: 100%;
   align-items: center;
   justify-content: space-around;
-  color: whitesmoke;
+  color: #f5f5f7;
   cursor: pointer;
 }
 #MainNav .alter {
@@ -64,6 +62,75 @@
   padding-right: 10px;
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+#Hero {
+  padding: 20px;
+  padding-top: 0;
+  background-color: #111;
+  color: #f5f5f7;
+  font-weight: 600;
+  height: 1680px;
+  position: relative;
+}
+#Hero .imgContainer {
+  background-color: black;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+#Hero .imgContainer img {
+  margin-top: 100px;
+  position: absolute;
+  left: 20%;
+}
+#Hero .separator {
+  background-color: #111;
+  height: 20px;
+}
+#Hero #heroText {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 850px;
+}
+#Hero #heroText .alter {
+  color: rgb(170, 170, 170);
+  text-align: center;
+}
+#Hero #heroText h1 {
+  font-size: 5rem;
+  text-align: center;
+  width: 60%;
+  margin-bottom: 25px;
+}
+#Hero #heroText p {
+  font-size: 2rem;
+  width: 60%;
+}
+#Hero h2 {
+  margin-top: 25px;
+}
+#Hero .links {
+  display: flex;
+  gap: 40px;
+  font-size: 1.5rem;
+  margin-top: 25px;
+}
+#Hero .links a {
+  text-decoration: none;
+  color: #f5f5f7;
+  padding: 2px;
+  border: 1px solid transparent;
+}
+#Hero .links a:hover {
+  border-bottom: 1px solid #f5f5f7;
 }
 
 * {

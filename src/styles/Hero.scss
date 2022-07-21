@@ -1,13 +1,11 @@
+body {
+  height: 600vh;
+}
 #main {
   position: relative;
 }
-#Hero {
-  background-color: #111;
-  color: whitesmoke;
-  font-weight: 600;
-  height: 600vh;
-}
 #MainNav {
+  z-index: 10;
   position: sticky;
   top: 0px;
   background-color: #111;
@@ -16,7 +14,7 @@
   width: 100%;
   align-items: center;
   justify-content: space-around;
-  color: whitesmoke;
+  color: #f5f5f7;
   cursor: pointer;
   .alter {
     color: rgb(98, 98, 98);
@@ -33,5 +31,73 @@
     padding-right: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
+  }
+}
+#Hero {
+  padding: 20px;
+  padding-top: 0;
+  background-color: #111;
+  color: #f5f5f7;
+  font-weight: 600;
+  height: 1680px;
+  position: relative;
+  .imgContainer {
+    background-color: black;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    img {
+      margin-top: 100px;
+      position: absolute;
+      left: 20%;
+    }
+  }
+  .separator {
+    background-color: #111;
+    height: 20px;
+  }
+  #heroText {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 850px;
+    .alter {
+      color: rgb(170, 170, 170);
+      text-align: center;
+    }
+    h1 {
+      font-size: 5rem;
+      text-align: center;
+      width: 60%;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 2rem;
+      width: 60%;
+    }
+  }
+  h2 {
+    margin-top: 25px;
+  }
+  .links {
+    display: flex;
+    gap: 40px;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    a {
+      text-decoration: none;
+      color: #f5f5f7;
+      padding: 2px;
+      border: 1px solid transparent;
+      &:hover {
+        border-bottom: 1px solid #f5f5f7;
+      }
+    }
   }
 }
