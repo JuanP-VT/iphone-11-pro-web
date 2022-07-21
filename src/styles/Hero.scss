@@ -7,7 +7,7 @@
   font-weight: 600;
   height: 600vh;
 }
-#HeroNav {
+#MainNav {
   position: sticky;
   top: 0px;
   background-color: #111;
@@ -16,6 +16,7 @@
   width: 100%;
   align-items: center;
   justify-content: space-around;
+  color: whitesmoke;
   cursor: pointer;
   .alter {
     color: rgb(98, 98, 98);
