@@ -1,7 +1,36 @@
+#nav {
+  display: flex;
+  background-color: black;
+  height: 40px;
+}
+#nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+#nav ul li {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: whitesmoke;
+  cursor: pointer;
+}
+#nav ul li:hover {
+  color: rgb(95, 95, 94);
+}
+#nav svg {
+  fill: whitesmoke;
+}
+#nav svg:hover {
+  fill: rgb(95, 95, 94);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: system-ui;
 }
 
 /*# sourceMappingURL=App.css.map */

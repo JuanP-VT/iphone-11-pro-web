@@ -1,0 +1,32 @@
+@import "Variables";
+
+#nav {
+  display: flex;
+  background-color: black;
+  height: 40px;
+
+  ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      color: whitesmoke;
+      cursor: pointer;
+      &:hover {
+        color: rgb(95, 95, 94);
+      }
+    }
+  }
+  svg {
+    fill: whitesmoke;
+
+    &:hover {
+      fill: rgb(95, 95, 94);
+    }
+  }
+}
